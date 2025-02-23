@@ -266,11 +266,11 @@ export default function Dashboard({
         {selectedProjects.length > 0 && (
           <div>
             <span className="font-semibold block">Projects:</span>
-            <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4">
+            <div className="displayF">
               {selectedProjects.map((item) => (
                 <div
                   key={item}
-                  className="flex items-center bg-blue-100 text-blue-700 rounded-full px-2 py-1 break-words"
+                  className="displayG items-center bg-blue-100 text-blue-700 rounded-full px-2 py-1"
                 >
                   <span>{item}</span>
                   <button
@@ -290,12 +290,13 @@ export default function Dashboard({
         )}
 
         {selectedDepts.length > 0 && (
-          <div className="w-full flex flex-wrap items-center gap-2">
+          <div>
             <span className="font-semibold">Depts:</span>
+            <div className="displayF">
             {selectedDepts.map((item) => (
               <div
                 key={item}
-                className="flex items-center bg-green-100 text-green-700 rounded-full px-2 py-1 max-w-[90%] break-words"
+                className="displayG items-center bg-blue-100 text-blue-700 rounded-full px-2 py-1"
               >
                 <span className="break-words">{item}</span>
                 <button
@@ -308,15 +309,17 @@ export default function Dashboard({
                 </button>
               </div>
             ))}
+            </div>
           </div>
         )}
         {selectedItems.length > 0 && (
-          <div className="w-full flex flex-wrap items-center gap-2">
+          <div>
             <span className="font-semibold">Items:</span>
+            <div className="displayF">
             {selectedItems.map((item) => (
               <div
                 key={item}
-                className="flex items-center bg-yellow-100 text-yellow-700 rounded-full px-2 py-1 max-w-[90%] break-words"
+                className="displayG items-center bg-blue-100 text-blue-700 rounded-full px-2 py-1"
               >
                 <span className="break-words">{item}</span>
                 <button
@@ -330,14 +333,16 @@ export default function Dashboard({
               </div>
             ))}
           </div>
+          </div>
         )}
         {selectedSupervisors.length > 0 && (
-          <div className="w-full flex flex-wrap items-center gap-2">
+          <div>
             <span className="font-semibold">Supervisors:</span>
+            <div className="displayF">
             {selectedSupervisors.map((item) => (
               <div
                 key={item}
-                className="flex items-center bg-red-100 text-red-700 rounded-full px-2 py-1 max-w-[90%] break-words"
+                className="displayG items-center bg-blue-100 text-blue-700 rounded-full px-2 py-1"
               >
                 <span className="break-words">{item}</span>
                 <button
@@ -352,6 +357,7 @@ export default function Dashboard({
                 </button>
               </div>
             ))}
+            </div>
           </div>
         )}
       </div>
